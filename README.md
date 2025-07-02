@@ -1,1 +1,1 @@
-# pantalla-encuesta-prototiipo-angular
+# pantalla-encuesta-prototiipo-jsvscript
