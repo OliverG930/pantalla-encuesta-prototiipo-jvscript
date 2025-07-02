@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Organizacional - Encuestas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="breadcrumb">
+            <span>Clima Organizacional</span> &gt; <span>Encuestas Periodos</span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="survey-list-section" class="survey-section">
+            <div class="actions-top">
+                <button class="btn btn-primary" id="new-survey-btn">NUEVA ENCUESTA</button>
+                <button class="btn btn-secondary" id="back-btn-list">VOLVER</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="survey-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>FORMULARIO</th>
+                            <th>CLASE ENCUESTA</th>
+                            <th>FECHA DESDE</th>
+                            <th>FECHA HASTA</th>
+                            <th>OBSERVACION</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="survey-table-body">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="pagination-controls">
+                <div class="rows-per-page">
+                    <label for="rows-per-page-select">Filas por pagina</label>
+                    <select id="rows-per-page-select">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <div class="pagination-numbers" id="pagination-numbers">
+                    </div>
+            </div>
+        </section>
+
+        <section id="survey-form-section" class="survey-section hidden">
+            <header class="header">
+                <nav class="breadcrumb">
+                    <span>Clima Organizacional</span> &gt; <span id="form-title">Area Laboral 2025</span>
+                </nav>
+            </header>
+            <p class="required-indicator">* Indica que la pregunta es obligatoria</p>
+
+            <form id="individual-survey-form">
+                <div id="survey-questions-container"></div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-light" id="save-draft-btn">GUARDAR</button>
+                    <button type="submit" class="btn btn-primary" id="submit-survey-btn">ENVIAR</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
